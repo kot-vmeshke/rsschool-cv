@@ -50,3 +50,9 @@ menuClose.addEventListener('click', () => {
         </div>
     </section>
 ```
+
+## Work experience
+
+Training project [Venom](https://github.com/kot-vmeshke/venom)
+
+Training project [Race](https://github.com/kot-vmeshke/NeedForJS)
