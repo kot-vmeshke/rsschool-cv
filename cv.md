@@ -56,3 +56,13 @@ menuClose.addEventListener('click', () => {
 Training project [Venom](https://github.com/kot-vmeshke/venom)
 
 Training project [Race](https://github.com/kot-vmeshke/NeedForJS)
+
+## Education
+* Kharkiv National University of Civil Engineering and Architecture (KNUCEA), 2009-2013
+* GeekBrains, HTML/CSS, Interactive course, 2021
+* GeekBrains, Git, Basic course, 2021
+* ITVDN, JavaScript Starter course, 2021
+
+## English
+
+Now my level is А1 (Beginner) but I am working to improve.
