@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Babay - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/8fd495949b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="name-wrapper">
+                <h1 class="name">Anna Babay</h1>
+                <p class="bio">Aspiring web developer</p>
+            </div>
+            <ul class="contacts">
+                <li class="contacts-item">
+                    <a href="tel:+380954393893" class="contacts-item-link"><span class="fas fa-phone"></span>+38095 439 38 93</a>
+                </li>
+                <li class="contacts-item">
+                    <a href="mailto:kot.vmeshke.4@gmail.com" class="contacts-item-link"><span class="fas fa-envelope"></span>kot.vmeshke.4@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="main-wrapper">
+                <div class="education">
+                    <h2>Education</h2>
+                    <ul class="education-list">
+                        <li class="education-list-item">Kharkiv National University of Civil Engineering and&nbsp;Architecture (KNUCEA), 2009-2013</li>
+                        <li class="education-list-item">GeekBrains, HTML/CSS, Interactive course, 2021</li>
+                        <li class="education-list-item">GeekBrains, Git, Basic course, 2021</li>
+                        <li class="education-list-item">ITVDN, JavaScript Starter course, 2021</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-list-item">HTML</li>
+                        <li class="skills-list-item">CSS</li>
+                        <li class="skills-list-item">JavaScript (entry level)</li>
+                        <li class="skills-list-item">Git</li>
+                        <li class="skills-list-item">Figma</li>
+                        <li class="skills-list-item">Adobe Photoshop</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <h3 class="project">Training project <a class="project-link" href="https://github.com/kot-vmeshke/venom" target="blank">Venom</a></h3>
+                    <p class="description">Adaptive layout of the site</p>
+                    <h3 class="project">Training project <a class="project-link" href="https://github.com/kot-vmeshke/NeedForJS" target="blank">Rase</a></h3>
+                    <p class="description">Javascript Practice</p>
+                </div>
+                <div class="english">
+                    <h2>English</h2>
+                    <p class="english-text">Now my level is А1 (Beginner), but I am working to improve.</p>
+                </div>
+            </div>
+            <div class="code-examples">
+                <h2>Code examples</h2>
+                <p class="code">
+                    const menuButton = document.querySelector('.menu-button');<br>
+                    const menu = document.querySelector('.nav-menu');<br>
+                    const menuClose = document.querySelector('.menu-close');<br>
+                    <br>
+                    menuButton.addEventListener('click', () => {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;menu.classList.add('is-active');<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;menuClose.classList.add('is-active-close');<br>
+                        <br>
+                    menuClose.addEventListener('click', () => {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;menu.classList.remove('is-active');<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;menuClose.classList.remove('is-active-close');<br>
+                    })
+                <p class="code">
+                    &lt;section id="dream" class="dream"&gt;<br>
+                    &nbsp;&nbsp;&lt;div class="container"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="dream-title"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Форма заказа билета в будущее<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;form action="#"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" placeholder="E-mail" name="e-mail" required&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="Имя" name="name" required&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="tel" placeholder="Телефон" name="phone" required&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="Куда я полечу в ближайшее время?" name="direction" required&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit" class="btn btn-dream">Двигаться к мечте!&lt;/button&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
+                    &nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/section&gt;<br>
+                </p>
+            </div>
+            <img src="./img/illustration.png" alt="woman with notebook" class="illustration">
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="socials">
+                <a href="https://t.me/Anna_Babay" class="socials-link" target="blank">
+                    <span class="fab fa-telegram"></span>
+                </a>
+                <a href="https://www.instagram.com/babay_anna/" class="socials-link" target="blank">
+                    <span class="fab fa-instagram"></span>
+                </a>
+                <a href="https://github.com/kot-vmeshke" class="socials-link" target="blank">
+                    <span class="fab fa-github"></span>
+                </a>
+            </div>
+            <a href="https://rs.school/js/" class="rss-link" target="blank" title="RSS JavaScript/Front-end">
+                <img src="./img/rs_school_js.svg" alt="logo: RS School" class="rss-logo">
+            </a>
+            <p class="date">Jule, 2021</p>
+        </div>
+    </footer>
+</body>
+</html>
