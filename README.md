@@ -1,1 +1,1 @@
-https://kot-vmeshke.github.io/rsschool-cv/cv
+https://kot-vmeshke.github.io/rsschool-cv/
