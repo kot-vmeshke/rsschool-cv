@@ -76,6 +76,10 @@
     flex-wrap: wrap;
 }
 
+.about-me {
+    margin-bottom: 32px;
+}
+
 .education {
     width: 335px;
     margin-right: 150px;
@@ -156,7 +160,7 @@ h2 {
 
 .illustration {
     position: absolute;
-    top: 238px;
+    top: 338px;
     left: 290px;
     z-index: -100;
 }
