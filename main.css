@@ -141,7 +141,7 @@ h2 {
     width: 186px;
 }
 
-.code {
+/* .code {
     width: 400px;
     padding: 10px;
     margin-bottom: 16px;
@@ -151,7 +151,7 @@ h2 {
     letter-spacing: 0.015em;
     background-color: #E6E6E6;
     border-radius: 5px;
-}
+} */
 
 .code:last-child {
     width: 676px;
@@ -160,7 +160,7 @@ h2 {
 
 .illustration {
     position: absolute;
-    top: 338px;
+    bottom: -38px;
     left: 290px;
     z-index: -100;
 }
@@ -188,4 +188,23 @@ h2 {
 .date {
     color: #fff;
     font-size: 14px;
+}
+
+.text-example {
+    width: 320px;
+    height: 208px;
+    padding: 10px;
+    margin-bottom: 16px;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+}
+
+.examples-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

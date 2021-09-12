@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet" href="./main.css">
     <script src="https://kit.fontawesome.com/8fd495949b.js" crossorigin="anonymous"></script>
 </head>
@@ -69,35 +72,40 @@
             </div>
             <section class="code-examples">
                 <h2>Code examples</h2>
-                <p class="code">
-                    const menuButton = document.querySelector('.menu-button');<br>
-                    const menu = document.querySelector('.nav-menu');<br>
-                    const menuClose = document.querySelector('.menu-close');<br>
-                    <br>
-                    menuButton.addEventListener('click', () => {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;menu.classList.add('is-active');<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;menuClose.classList.add('is-active-close');<br>
-                        <br>
-                    menuClose.addEventListener('click', () => {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;menu.classList.remove('is-active');<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;menuClose.classList.remove('is-active-close');<br>
-                    })
-                <p class="code">
-                    &lt;section id="dream" class="dream"&gt;<br>
-                    &nbsp;&nbsp;&lt;div class="container"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="dream-title"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Форма заказа билета в будущее<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;form action="#"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" placeholder="E-mail" name="e-mail" required&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="Имя" name="name" required&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="tel" placeholder="Телефон" name="phone" required&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="Куда я полечу в ближайшее время?" name="direction" required&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit" class="btn btn-dream">Двигаться к мечте!&lt;/button&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
-                    &nbsp;&nbsp;&lt;/div&gt;<br>
-                    &lt;/section&gt;<br>
-                </p>
+                <div class="examples-wrapper">
+                    <pre><code class="text-example">
+function highAndLow(numbers) {
+    let arr = numbers.split(' ');
+    arr.sort((a, b) => a - b);
+    let max = arr[arr.length-1],
+        min = arr[0];
+    return `${max} ${min}`;
+}
+                    </code></pre>
+                    <pre><code class="text-example">
+function getMiddle(s) {
+    let middle = s.length / 2;
+    if (s.length === 1) {
+        return s[0];
+    } else if (s.length % 2 === 0){
+        return `${s[middle-1]}${s[middle]}`
+    } else {
+        return s[Math.floor(middle)];
+    }
+}
+                    </code></pre>
+                    <pre><code class="text-example">
+function odds(values){
+    let arr = [];
+    for (value of values) {
+        if (value % 2 !== 0) {
+        arr.push(value);
+        }
+    }
+    return arr;
+}
+                    </code></pre>
+                </div>
             </section>
             <figure class="illustration">
                 <img src="./img/illustration.png" alt="woman with notebook">
