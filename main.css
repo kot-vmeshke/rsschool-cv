@@ -288,3 +288,149 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.contacts-wrapper {
+    width: 290px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-adaptive {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    background-image: url("./img/menu-09.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+
+.adaptive {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-adaptive {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 100vw;
+    height: 320px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Adaptive */
+/* 992-1200 */
+@media screen and (max-width: 1200px) {
+    /* * {border: 1px solid red;} */
+}
+
+/* 768-992 */
+@media screen and (max-width: 992px) {
+    .main-container {
+        padding: 32px 32px;
+    }
+    .illustration {
+        left: 270px;
+    }
+}
+
+/* 576-768 */
+@media screen and (max-width: 768px) {
+    .main-container {
+        width: 500px;
+    }
+    .illustration {
+        left: 80px;
+    }
+    .experience-wrapper {
+        width: 490px;
+    }
+    .english,
+    .education,
+    .cleaning {
+        margin-bottom: 32px;
+    }
+    .english,
+    .about-me {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .experience {
+        margin-right: 0;
+    }
+}
+
+/* 0-576 */
+@media screen and (max-width: 576px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .header-container {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .name-wrapper {
+        margin-bottom: 20px;
+    }
+    .nav {
+        display: none;
+    }
+    .menu-adaptive {
+        display: block;
+    }
+    .contacts-wrapper {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .main-container {
+        width: 90%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .about-me {
+        width: 90%;
+        margin-right: 0;
+        margin-top: 32px;
+    }
+    .education {
+        width: 90%;
+        margin-right: 0;
+    }
+    .experience-wrapper {
+        width: 280px;
+    }
+    .museum {
+        margin-bottom: 32px;
+    }
+    .text-example {
+        box-sizing: border-box;
+        width: 270px;
+    }
+    .illustration {
+        position: relative;
+        left: calc(50% - 140px);
+        width: fit-content;
+    }
+    .img {
+        width: 280px;
+        height: auto;
+        margin-top: -32px;
+        margin-right: 0;
+    }
+    .footer-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .fa-github:before {
+        margin: 0;
+    }
+}
