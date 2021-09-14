@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet" href="./main.css">
     <script src="https://kit.fontawesome.com/8fd495949b.js" crossorigin="anonymous"></script>
 </head>
@@ -18,89 +21,138 @@
                 <h1 class="name">Anna Babay</h1>
                 <p class="bio">Aspiring web developer</p>
             </div>
-            <ul class="contacts">
-                <li class="contacts-item">
-                    <a href="tel:+380954393893" class="contacts-item-link"><span class="fas fa-phone"></span>+38095 439 38 93</a>
-                </li>
-                <li class="contacts-item">
-                    <a href="mailto:kot.vmeshke.4@gmail.com" class="contacts-item-link"><span class="fas fa-envelope"></span>kot.vmeshke.4@gmail.com</a>
-                </li>
-            </ul>
+            <div class="contacts-wrapper">
+                <ul class="contacts">
+                    <li class="contacts-item">
+                        <a href="tel:+380954393893" class="contacts-item-link"><span class="fas fa-phone"></span>+38095 439 38 93</a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="mailto:kot.vmeshke.4@gmail.com" class="contacts-item-link"><span class="fas fa-envelope"></span>kot.vmeshke.4@gmail.com</a>
+                    </li>
+                </ul>
+                <button class="menu-adaptive"></button>
+            </div>
+
+        </div>
+        <div class="nav">
+            <div class="nav-container">
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item">
+                            <a href="#about-me" class="header-nav-link">ABOUT ME</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#english" class="header-nav-link">ENGLISH</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#education" class="header-nav-link">EDUCATION</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#skills" class="header-nav-link">SKILLS</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#experience" class="header-nav-link">EXPERIENCE</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#code-examples" class="header-nav-link">CODE EXAMPLES</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <div class="main-container">
-            <section class="about-me">
-                <h2>About Me</h2>
-                <p class="about-me_text">I have been working as a designer for a long time. I am currently studying web development. I really want to change my profession and do not plan to stop until I achieve a result.</p>
-            </section>
-            <div class="main-wrapper">               
-                <section class="education">
+            <div class="main-wrapper">
+                <section class="about-me" id="about-me">
+                    <h2>About Me</h2>
+                    <p class="about-me_text">I have been working as a designer for a long time. I am currently studying web development. I really want to change my profession and do not plan to stop until I achieve a result.</p>
+                </section>
+                <section class="english" id="english">
+                    <h2>English</h2>
+                    <p class="english-text">Now my level is А1 (Beginner), but I am working to improve.</p>
+                </section>               
+                <section class="education" id="education">
                     <h2>Education</h2>
                     <ul class="education-list">
                         <li class="education-list-item">Kharkiv National University of Civil Engineering and&nbsp;Architecture (KNUCEA), 2009-2013</li>
                         <li class="education-list-item">GeekBrains, HTML/CSS, Interactive course, 2021</li>
                         <li class="education-list-item">GeekBrains, Git, Basic course, 2021</li>
                         <li class="education-list-item">ITVDN, JavaScript Starter course, 2021</li>
+                        <li class="education-list-item">RSSchool, JS/FE Preschool, 2021</li>
                     </ul>
                 </section>
-                <section class="skills">
+                <section class="skills" id="skills">
                     <h2>Skills</h2>
                     <ul class="skills-list">
                         <li class="skills-list-item">HTML</li>
                         <li class="skills-list-item">CSS</li>
-                        <li class="skills-list-item">JavaScript (entry level)</li>
+                        <li class="skills-list-item">JavaScript (basic)</li>
                         <li class="skills-list-item">Git</li>
                         <li class="skills-list-item">Figma</li>
                         <li class="skills-list-item">Adobe Photoshop</li>
                     </ul>
                 </section>
-                <section class="experience">
+                <section class="experience" id="experience">
                     <h2>Experience</h2>
-                    <h3 class="project">Training project <a class="project-link" href="https://github.com/kot-vmeshke/venom" target="blank">Venom</a></h3>
-                    <p class="description">Adaptive layout of the site</p>
-                    <h3 class="project">Training project <a class="project-link" href="https://github.com/kot-vmeshke/NeedForJS" target="blank">Rase</a></h3>
-                    <p class="description">Javascript Practice</p>
-                </section>
-                <section class="english">
-                    <h2>English</h2>
-                    <p class="english-text">Now my level is А1 (Beginner), but I am working to improve.</p>
+                    <div class="experience-wrapper">
+                        <a href="https://kot-vmeshke.github.io/fast-cleaning/" class="project-link" target="blank">
+                            <div class="project-img cleaning">
+                                <h3 class="project">Fast Cleaning</h3>
+                            </div>
+                        </a>
+                        <a href="https://rolling-scopes-school.github.io/kot-vmeshke-JSFEPRESCHOOL/museum" class="project-link" target="blank">
+                            <div class="project-img museum">
+                                <h3 class="project">Museum</h3>
+                            </div>
+                        </a>
+                        <a href="https://rolling-scopes-school.github.io/kot-vmeshke-JSFEPRESCHOOL/vertical-slider/" class="project-link" target="blank">
+                            <div class="project-img slider">
+                                <h3 class="project">Vertical Slider</h3>
+                            </div>
+                        </a>
+                    </div>
                 </section>
             </div>
-            <section class="code-examples">
+            <section class="code-examples" id="code-examples">
                 <h2>Code examples</h2>
-                <p class="code">
-                    const menuButton = document.querySelector('.menu-button');<br>
-                    const menu = document.querySelector('.nav-menu');<br>
-                    const menuClose = document.querySelector('.menu-close');<br>
-                    <br>
-                    menuButton.addEventListener('click', () => {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;menu.classList.add('is-active');<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;menuClose.classList.add('is-active-close');<br>
-                        <br>
-                    menuClose.addEventListener('click', () => {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;menu.classList.remove('is-active');<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;menuClose.classList.remove('is-active-close');<br>
-                    })
-                <p class="code">
-                    &lt;section id="dream" class="dream"&gt;<br>
-                    &nbsp;&nbsp;&lt;div class="container"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2 class="dream-title"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Форма заказа билета в будущее<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;form action="#"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" placeholder="E-mail" name="e-mail" required&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="Имя" name="name" required&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="tel" placeholder="Телефон" name="phone" required&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="Куда я полечу в ближайшее время?" name="direction" required&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit" class="btn btn-dream">Двигаться к мечте!&lt;/button&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
-                    &nbsp;&nbsp;&lt;/div&gt;<br>
-                    &lt;/section&gt;<br>
-                </p>
+                <div class="examples-wrapper">
+                    <pre><code class="text-example">
+function highAndLow(numbers) {
+    let arr = numbers.split(' ');
+    arr.sort((a, b) => a - b);
+    let max = arr[arr.length-1],
+        min = arr[0];
+    return `${max} ${min}`;
+}
+                    </code></pre>
+                    <pre><code class="text-example">
+function getMiddle(s) {
+    let middle = s.length / 2;
+    if (s.length === 1) {
+        return s[0];
+    } else if (s.length % 2 === 0){
+        return `${s[middle-1]}${s[middle]}`
+    } else {
+        return s[Math.floor(middle)];
+    }
+}
+                    </code></pre>
+                    <pre><code class="text-example">
+function odds(values){
+    let arr = [];
+    for (value of values) {
+        if (value % 2 !== 0) {
+        arr.push(value);
+        }
+    }
+    return arr;
+}
+                    </code></pre>
+                </div>
             </section>
             <figure class="illustration">
-                <img src="./img/illustration.png" alt="woman with notebook">
+                <img src="./img/illustration.png" alt="woman with notebook" class="img">
             </figure>
         </div>
     </main>
@@ -120,8 +172,9 @@
             <a href="https://rs.school/js/" class="rss-link" target="blank" title="RSS JavaScript/Front-end">
                 <img src="./img/rs_school_js.svg" alt="logo: RS School" class="rss-logo">
             </a>
-            <p class="date">Jule, 2021</p>
+            <p class="date">September, 2021</p>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
